@@ -3,12 +3,7 @@
 # ========================================================================================
 import principal
 
-# Variables
-# ========================================================================================
-
-
-
-students = [{"id":1234, "name":"Ericka", "age":"11", "grade":"5", "subjects":{"Mate":88, "Ingles":90}}, {"id":5678, "name":"Raul", "age":"11", "grade":"5", "subjects":{"Mate":45, "Ingles":25}}]
+students = []
 
 # Function that displays the login menu
 
