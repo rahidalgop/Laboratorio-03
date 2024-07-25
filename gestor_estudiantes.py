@@ -343,16 +343,15 @@ def reports():
     approvedStudents = []
     failedStudents = []
 
-    for i in students:
+    for i in range(0, len(students)):
         average = 0
-        for x in students["subjects"].items():
-            average = average + x
-        average = average / len(students[i]["subjects"])
+        gradesSum = sum(students[i]["subjects"].values())
+        average = gradesSum / len(students[i]["subjects"])
 
         if average >= 70:
-            approvedStudents.append(i)
+            approvedStudents.append(students[i])
         else:
-            failedStudents.append(i)
+            failedStudents.append(students[i])
 
 
     print("\nThis is the list of approved / passed students: \n")
