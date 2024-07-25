@@ -89,6 +89,9 @@ def introduceStudent():
             grade = int(grade)
             if grade >= 1 and grade <= 6:
                 break
+            else:
+                print("Invalid argument.")
+                grade = input("Introduce a valid grade (number must be between one and six): ")
         except ValueError:
             print("Invalid argument.")
             grade = input("Introduce a valid grade (number must be between one and six): ")
@@ -211,6 +214,9 @@ def modifyStudent():
                     grade = int(grade)
                     if grade >= 1 and grade <= 6:
                         break
+                    else:
+                        print("Invalid argument.")
+                        grade = input("Introduce a valid grade (number must be between one and six): ")
                 except ValueError:
                     print("Invalid argument.")
                     grade = input("Introduce a valid grade (number must be between one and six): ")
